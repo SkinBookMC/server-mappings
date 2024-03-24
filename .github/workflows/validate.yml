@@ -1,0 +1,26 @@
+name: Validate JSON
+
+on:
+  pull_request:
+    paths:
+      - 'servers/**/*.json'
+    types: [opened, reopened, synchronize]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install ajv
+
+      - name: Run validation script
+        run: npm run validate

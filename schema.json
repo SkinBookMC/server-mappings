@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "id": { "type": "string" },
+        "addresses": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "primaryAddress": { "type": "string" },
+        "port": { "type": "integer" },
+        "versions": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "primaryVersion": { "type": "string" },
+        "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "primaryRegion": { "type": "string" },
+        "regions": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "crossplay": { "type": "boolean" },
+        "primaryColor": { "type": "string" },
+        "secondaryColor": { "type": "string" },
+        "website": { "type": "string" },
+        "store": { "type": "string" },
+        "wiki": { "type": "string" },
+        "merchStore": { "type": "string" },
+        "socials": {
+            "type": "object",
+            "properties": {
+                "twitter": { "type": "string" },
+                "discord": { "type": "string" },
+                "youtube": { "type": "string" },
+                "instagram": { "type": "string" },
+                "twitch": { "type": "string" },
+                "telegram": { "type": "string" },
+                "reddit": { "type": "string" },
+                "tiktok": { "type": "string" },
+                "facebook": { "type": "string" }
+            }
+        },
+        "privacyPolicy": { "type": "string" },
+        "tos": { "type": "string" },
+        "rules": { "type": "string" },
+        "support": { "type": "string" }
+    },
+    "required": [
+        "id",
+        "addresses",
+        "primaryAddress",
+        "port",
+        "versions",
+        "primaryVersion",
+        "tags",
+        "primaryRegion",
+        "regions",
+        "crossplay",
+        "primaryColor",
+        "secondaryColor"
+    ]
+}

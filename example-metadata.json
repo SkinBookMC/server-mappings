@@ -1,0 +1,29 @@
+{
+    "id": "ExampleServer",
+    "addresses": ["mc.example.com"],
+    "primaryAddress": "mc.example.com",
+    "port": 25565,
+    "versions": ["1.8", "1.16.5", "1.17"],
+    "primaryVersion": "1.16.5",
+    "tags": ["minigames", "pvp", "survival"],
+    "primaryRegion": "NA",
+    "regions": ["NA", "EU", "AS"],
+    "crossplay": true,
+    "primaryColor": "#00FFFF",
+    "secondaryColor": "#FF0000",
+    "socials": {
+        "twitter": "MyServer",
+        "discord": "https://discord.gg/example",
+        "youtube": "MyServerChannel",
+        "instagram": "MyServerOfficial",
+        "twitch": "MyServerStreams",
+        "telegram": "MyServerGroup",
+        "reddit": "r/MyServerSubreddit",
+        "tiktok": "MyServerTikTok",
+        "facebook": "MyServerPage"
+    },
+    "privacyPolicy": "https://www.example.com/privacy",
+    "tos": "https://www.example.com/tos",
+    "rules": "https://www.example.com/rules",
+    "support": "https://www.example.com/support"
+}

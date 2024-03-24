@@ -1,0 +1,22 @@
+{
+  "name": "server-mappings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./scripts/validator.js",
+  "scripts": {
+    "validate": "node ./scripts/validator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skinbookmc/ServerMappings.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skinbookmc/ServerMappings/issues"
+  },
+  "homepage": "https://github.com/skinbookmc/ServerMappings#readme",
+  "dependencies": {
+    "ajv": "^8.12.0"
+  }
+}
