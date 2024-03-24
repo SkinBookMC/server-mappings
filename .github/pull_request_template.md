@@ -1,5 +1,5 @@
 ## Mapping Properties:
-Please ensure that you check the following boxes that apply to your submission. If you are unsure about any of these, refer to the [example-metadata.json]().
+Please ensure that you check the following boxes that apply to your submission. If you are unsure about any of these, refer to the [example-metadata.json](https://github.com/skinbookmc/servermappings/blob/master/example-metadata.json).
 
 ### Required
 The following properties are required for your submission, if you do not have them, update your Pull Request with the correct information or your submission will be rejected:
