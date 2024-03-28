@@ -1,0 +1,25 @@
+{
+    "id": "hoplite",
+    "name": "Hoplite",
+    "website": "https://hoplite.gg/",
+    "store": "https://store.hoplite.gg/",
+    "description": "A Minecraft PvP network with innovative new gamemodes and proximity voice chat",
+    "addresses": ["hoplite.gg"],
+    "primaryAddress": "hoplite.gg",
+    "primaryColor": "#fcc694",
+    "secondaryColor": "#fa3635",
+    "versions": ["1.20.*"],
+    "primaryVersion": "1.20.1",
+    "crossplay": false,
+    "port": 25565,
+    "primaryRegion": "NA",
+    "regions": ["NA"],
+    "primaryLanguage": "en",
+    "languages": ["en"],
+    "tags": ["Minigames", "PvP"],
+    "socials": {
+        "twitter": "hoplitenetwork",
+        "discord": "https://discord.com/invite/hoplitenetwork",
+        "youtube": "UCX3dkuHYteQRdAUlhmu8qaQ"
+    }
+}

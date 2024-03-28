@@ -1,0 +1,38 @@
+{
+    "id": "minemenclub",
+    "name": "Minemen Club",
+    "description": "Minemen Club is a PVP/Minigames related Minecraft server",
+    "website": "https://minemen.club/",
+    "store": "https://store.minemen.club/",
+    "port": 25565,
+    "crossplay": false,
+    "addresses": [
+        "minemen.club",
+        "mineman.club",
+        "icantjoinlmfao.club",
+        "euicantjoinlmfao.club",
+        "minemenclub.com",
+        "pvp.bar",
+        "zonix.us"
+    ],
+    "regions": ["na", "eu", "au"],
+    "primaryRegion": "na",
+    "primaryAddress": "minemen.club",
+    "versions": [
+        "1.7.*",
+        "1.8.*",
+        "1.19.2",
+        "1.19.3",
+        "1.19.4",
+        "1.20.*"
+    ],
+    "primaryVersion": "1.8.9",
+    "primaryColor": "#e911e5",
+    "secondaryColor": "#fffeff",
+    "tags": ["PvP", "Minigames"],
+    "socials": {
+        "twitter": "minemen_network",
+        "discord": "https://discord.com/invite/4gfk48gv9z",
+        "reddit": "r/MinemenClub"
+    }
+}
