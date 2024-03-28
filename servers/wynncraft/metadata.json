@@ -1,0 +1,27 @@
+{
+    "id": "wynncraft",
+    "name": "Wynncraft",
+    "port": 25565,
+    "website": "https://wynncraft.com/",
+    "store": "https://store.wynncraft.com/",
+    "description": "The Minecraft MMORPG. Level up, complete quests and raid with your friends!",
+    "primaryRegion": "na",
+    "regions": ["na", "eu"],
+    "addresses": ["wynncraft.com"],
+    "primaryAddress": "play.wynncraft.com",
+    "versions": ["1.16.*", "1.17.*", "1.18.*", "1.19.*", "1.20.*"],
+    "primaryVersion": "1.20.2",
+    "primaryColor": "#64a030",
+    "secondaryColor": "#2b3d1f",
+    "tags": ["Adventure", "PvE", "Open World"],
+    "socials": {
+        "twitter": "Wynncraft",
+        "discord": "https://discord.com/invite/yJkSQwp",
+        "youtube": "WynncraftOfficial",
+        "reddit": "r/WynnCraft",
+        "tiktok": "wynncraftofficial"
+    },
+    "crossplay": false,
+    "tos": "https://forums.wynncraft.com/help/terms",
+    "privacyPolicy": "https://store.wynncraft.com/terms/privacy"
+}

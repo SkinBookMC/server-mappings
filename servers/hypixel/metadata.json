@@ -1,0 +1,42 @@
+{
+    "id": "hypixel",
+    "name": "Hypixel",
+    "port": 25565,
+    "website": "https://hypixel.net/",
+    "store": "https://store.hypixel.net/",
+    "wiki": "https://wiki.hypixel.net/",
+    "description": "Play the best Minecraft minigames for free!",
+    "addresses": ["hypixel.net", "hypixel.io"],
+    "primaryAddress": "mc.hypixel.net",
+    "primaryColor": "#ecb94f",
+    "secondaryColor": "#372826",
+    "versions": [
+        "1.8.*",
+        "1.12.*",
+        "1.16.*",
+        "1.17.*",
+        "1.18.*",
+        "1.19.*",
+        "1.20.*"
+    ],
+    "primaryVersion": "1.8.9",
+    "crossplay": false,
+    "primaryRegion": "NA",
+    "regions": ["NA"],
+    "primaryLanguage": "en",
+    "languages": ["en"],
+    "tags": ["Minigames", "PvP", "Skyblock"],
+    "socials": {
+        "twitter": "HypixelNetwork",
+        "discord": "https://discord.com/invite/Hypixel",
+        "youtube": "Hypixel",
+        "instagram": "hypixelofficial",
+        "reddit": "r/hypixel",
+        "tiktok": "hypixel",
+        "facebook": "Hypixel"
+    },
+    "privacyPolicy": "https://hypixel.net/privacy",
+    "tos": "https://hypixel.net/terms",
+    "rules": "https://hypixel.net/rules",
+    "support": "https://support.hypixel.net"
+}

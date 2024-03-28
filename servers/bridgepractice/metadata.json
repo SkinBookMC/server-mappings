@@ -1,0 +1,24 @@
+{
+    "id": "bridgepractice",
+    "name": "BridgePractice.net",
+    "description": "BridgePractice.net is a server that offers a variety of PvP minigames, including Bridge, Sumo, and more!",
+    "website": "https://bridgepractice.net/",
+    "store": "https://bridgepractice.net/store/",
+    "addresses": ["bridgepractice.net"],
+    "primaryAddress": "bridgepractice.net",
+    "primaryColor": "#00b6f6",
+    "secondaryColor": "#e33609",
+    "tags": ["PvP", "Minigames"],
+    "versions": ["1.8.9"],
+    "primaryVersion": "1.8.9",
+    "crossplay": false,
+    "port": 25565,
+    "regions": ["NA"],
+    "primaryRegion": "NA",
+    "socials": {
+        "twitter": "BridgePractice1",
+        "discord": "https://discord.com/invite/kwBWv6gyj3",
+        "youtube": "UC8VaBceZEBUfxZmKrb-MYdw",
+        "tiktok": "bridgepractice"
+    }
+}
