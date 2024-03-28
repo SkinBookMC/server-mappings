@@ -1,0 +1,33 @@
+{
+    "id": "mineplex",
+    "name": "Mineplex",
+    "website": "http://mineplex.com/",
+    "store": "https://www.mineplex.com/shop",
+    "addresses": ["mineplex.com"],
+    "primaryAddress": "mineplex.com",
+    "primaryColor": "#ee9f0b",
+    "secondaryColor": "#2a292b",
+    "versions": [
+        "1.8.*",
+        "1.12.*",
+        "1.16.*",
+        "1.17.*",
+        "1.18.*",
+        "1.19.*",
+        "1.20.*"
+    ],
+    "regions": ["na", "eu", "as", "au"],
+    "primaryRegion": "na",
+    "primaryVersion": "1.8.9",
+    "tags": ["Minigames", "PvP"],
+    "crossplay": true,
+    "port": 25565,
+    "socials": {
+        "twitter": "mineplex",
+        "discord": "https://discord.com/invite/uv7hBwx",
+        "youtube": "MineplexGamesOfficial",
+        "instagram": "official.mineplex",
+        "twitch": "mineplex",
+        "facebook": "MineplexGames"
+    }
+}

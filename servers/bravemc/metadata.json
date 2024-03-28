@@ -1,0 +1,21 @@
+{
+    "id": "bravemc",
+    "name": "BraveMC",
+    "store": "https://buy.bravemc.com/",
+    "description": "A new diverse SkyBlock experience",
+    "addresses": ["bravemc.net"],
+    "primaryAddress": "bravemc.net",
+    "versions": ["1.20.*"],
+    "primaryVersion": "1.20.1",
+    "primaryColor": "#ECECEC",
+    "secondaryColor": "#01C9BE",
+    "primaryRegion": "NA",
+    "regions": ["NA"],
+    "crossplay": false,
+    "port": 25565,
+    "tags": ["Skyblock"],
+    "socials": {
+        "twitter": "BraveMC_NET",
+        "discord": "https://discord.com/invite/bravemc"
+    }
+}

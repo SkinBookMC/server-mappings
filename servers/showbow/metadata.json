@@ -1,0 +1,30 @@
+{
+    "id": "shotbow",
+    "name": "Shotbow",
+    "website": "https://shotbow.net/",
+    "store": "https://buy.shotbow.net/",
+    "description": "Home of Annihilation, MineZ, and SMASH",
+    "addresses": ["shotbow.net"],
+    "primaryAddress": "play.shotbow.net",
+    "versions": ["1.12.*", "1.16.*", "1.17.*", "1.18.*", "1.19.*"],
+    "primaryVersion": "1.19.2",
+    "primaryRegion": "NA",
+    "regions": ["NA"],
+    "primaryColor": "#553c22",
+    "secondaryColor": "#c1c1c0",
+    "tags": ["Minigames", "PvP"],
+    "socials": {
+        "twitter": "ShotbowNetwork",
+        "discord": "https://discord.com/invite/shotbow",
+        "youtube": "ShotbowOfficial",
+        "instagram": "shotbowofficial",
+        "reddit": "r/ShotBow",
+        "tiktok": "shotbownetwork",
+        "facebook": "ShotbowOfficial"
+    },
+    "port": 25565,
+    "crossplay": false,
+    "privacyPolicy": "https://shotbow.net/forum/p/privacy_policy/",
+    "tos": "https://shotbow.net/forum/help/terms",
+    "rules": "https://shotbow.net/forum/p/rules/"
+}
