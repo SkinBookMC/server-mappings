@@ -3,6 +3,13 @@
     "type": "object",
     "properties": {
         "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "languages": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "primaryLanguage": { "type": "string" },
         "addresses": {
             "type": "array",
             "items": { "type": "string" }
@@ -50,6 +57,7 @@
         "support": { "type": "string" }
     },
     "required": [
+        "name",
         "id",
         "addresses",
         "primaryAddress",

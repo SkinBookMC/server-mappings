@@ -1,5 +1,6 @@
 {
     "id": "ExampleServer",
+    "name": "Example Server",
     "addresses": ["mc.example.com"],
     "primaryAddress": "mc.example.com",
     "port": 25565,
@@ -11,6 +12,9 @@
     "crossplay": true,
     "primaryColor": "#00FFFF",
     "secondaryColor": "#FF0000",
+    "website": "https://www.example.com",
+    "wiki": "https://wiki.example.com",
+    "store": "https://store.example.com",
     "socials": {
         "twitter": "MyServer",
         "discord": "https://discord.gg/example",

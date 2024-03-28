@@ -17,6 +17,31 @@ function validateMetadataFile(filePath) {
             console.error(`Validation failed for file: ${filePath}`)
             console.error(validate.errors)
             process.exitCode = 1
+        } else {
+            const missingProperties = schema.required.filter(
+                (prop) => !(prop in metadata)
+            )
+            if (missingProperties.length > 0) {
+                console.error(
+                    `Missing required properties in file: ${filePath}`
+                )
+                console.error(
+                    `Missing properties: ${missingProperties.join(', ')}`
+                )
+                process.exitCode = 1
+            }
+
+            // Check for unwanted properties
+            const unwantedProperties = Object.keys(metadata).filter(
+                (prop) => !schema.properties.hasOwnProperty(prop)
+            )
+            if (unwantedProperties.length > 0) {
+                console.error(`Unwanted properties found in file: ${filePath}`)
+                console.error(
+                    `Unwanted properties: ${unwantedProperties.join(', ')}`
+                )
+                process.exitCode = 1
+            }
         }
     } catch (error) {
         console.error(`Error while reading or parsing file: ${filePath}`)
