@@ -33,4 +33,4 @@ jobs:
 
       - name: Upload folder to S3
         run: |
-          aws s3 cp cdn s3://test-folder/test --recursive --endpoint-url=https://3709ace193373440a7cb22588c27a53b.r2.cloudflarestorage.com/skinbook-cdn
+          aws s3 cp ./cdn s3://cdn --recursive --endpoint-url=https://3709ace193373440a7cb22588c27a53b.r2.cloudflarestorage.com/skinbook-cdn
