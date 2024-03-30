@@ -24,13 +24,10 @@ jobs:
       - name: Run package script
         run: npm run package      
 
-      - name: Set up AWS CLI
-        uses: aws-actions/configure-aws-credentials@v2
+      - name: Upload to S3
+        uses: shallwefootball/s3-upload-action@master
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: auto
-
-      - name: Upload folder to S3
-        run: |
-          aws s3 cp ./cdn s3://cdn --recursive --endpoint-url=https://3709ace193373440a7cb22588c27a53b.r2.cloudflarestorage.com/skinbook-cdn
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: 'cdn'
