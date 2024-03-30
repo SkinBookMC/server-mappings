@@ -28,7 +28,7 @@ jobs:
         run: |
           export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
           export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-          aws s3 cp cdn s3://test-folder/test --recursive --endpoint-url=https://3709ace193373440a7cb22588c27a53b.r2.cloudflarestorage.com/skinbook-cdn
+          aws s3 cp ./cdn s3://test-folder/cdn --recursive --endpoint-url=https://3709ace193373440a7cb22588c27a53b.r2.cloudflarestorage.com/skinbook-cdn
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
