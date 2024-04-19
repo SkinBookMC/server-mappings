@@ -71,7 +71,7 @@ function prepareCDNUpload() {
 
     combineMetadataToServersJSON()
     copyAndRenameFiles('logos', 'logo.png')
-    copyAndRenameFiles('banners', 'background.png')
+    copyAndRenameFiles('backgrounds', 'background.png')
 }
 
 // Usage
