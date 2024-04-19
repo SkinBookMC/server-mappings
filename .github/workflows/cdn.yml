@@ -25,21 +25,21 @@ jobs:
           cd ./cl-cdn
           npm run package
 
-      - name: cleanup
-        run: |
-          rm -rf ./cl-cdn/.git
-          rm -rf ./cl-cdn/.github
-          rm -rf ./cl-cdn/.gitignore
-          rm -rf ./cl-cdn/LICENSE
-          rm -rf ./cl-cdn/pack.bat
-          rm -rf ./cl-cdn/start_reindex.bat
-          rm -rf ./cl-cdn/scripts
-          rm -rf ./cl-cdn/README.md
-          rm -rf ./cl-cdn/package.json
-          rm -rf ./cl-cdn/servers
-          rm -rf ./cl-cdn/.prettierrc.yaml
-          rm -rf ./cl-cdn/.prettierignore
-          cd ./cl-cdn
+      # - name: cleanup
+      #   run: |
+      #     rm -rf ./cl-cdn/.git
+      #     rm -rf ./cl-cdn/.github
+      #     rm -rf ./cl-cdn/.gitignore
+      #     rm -rf ./cl-cdn/LICENSE
+      #     rm -rf ./cl-cdn/pack.bat
+      #     rm -rf ./cl-cdn/start_reindex.bat
+      #     rm -rf ./cl-cdn/scripts
+      #     rm -rf ./cl-cdn/README.md
+      #     rm -rf ./cl-cdn/package.json
+      #     rm -rf ./cl-cdn/servers
+      #     rm -rf ./cl-cdn/.prettierrc.yaml
+      #     rm -rf ./cl-cdn/.prettierignore
+      #     cd ./cl-cdn
           
       - uses: ryand56/r2-upload-action@v1.2
         with:
@@ -47,5 +47,5 @@ jobs:
           r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
           r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           r2-bucket: ${{ secrets.R2_BUCKET }}
-          source-dir: cl-cdn
-          destination-dir: .
+          source-dir: cl-cdn/server-mappings
+          destination-dir: server-mappings

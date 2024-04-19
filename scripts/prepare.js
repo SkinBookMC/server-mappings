@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const serversDir = path.join(__dirname, '../servers')
-const cdnDir = path.join(__dirname, '../cdn')
+const cdnDir = path.join(__dirname, '../server-mappings')
 
 // Function to read directories recursively
 function readDirectoriesRecursively(dir) {
