@@ -1,33 +1,31 @@
-name: Upload to S3
-
+name: Upload to R2
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
+  workflow_dispatch:
 
 jobs:
-  upload:
+  Upload-to-R2:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
         with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install ajv
-
-      - name: Run package script
-        run: npm run package      
-
-      - name: Upload to S3
-        uses: shallwefootball/s3-upload-action@master
+          path: cl-cdn
+          
+      - name: cleanup
+        run: |
+          rm -rf ./cl-cdn/.git
+          rm -rf ./cl-cdn/.github
+          rm -rf ./cl-cdn/.gitignore
+          rm -rf ./cl-cdn/LICENSE
+          rm -rf ./cl-cdn/pack.bat
+          rm -rf ./cl-cdn/start_reindex.bat
+          
+      - uses: ryand56/r2-upload-action@v1.2
         with:
-          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_bucket: ${{ secrets.AWS_BUCKET }}
-          source_dir: 'cdn'
+          r2-account-id: ${{ secrets.R2_ACCOUNT_ID }}
+          r2-access-key-id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          r2-secret-access-key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          r2-bucket: ${{ secrets.R2_BUCKET }}
+          source-dir: cl-cdn
+          destination-dir: cl-cdn
