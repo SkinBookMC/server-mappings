@@ -27,16 +27,16 @@ jobs:
 
       - name: cleanup
         run: |
-          rm -rf ./.git
-          rm -rf ./.github
-          rm -rf ./.gitignore
-          rm -rf ./LICENSE
-          rm -rf ./pack.bat
-          rm -rf ./start_reindex.bat
-          rm -rf ./scripts
-          rm -rf ./README.md
-          rm -rf ./package.json
-          rm -rf ./servers
+          rm -rf ./cl-cdn/.git
+          rm -rf ./cl-cdn/.github
+          rm -rf ./cl-cdn/.gitignore
+          rm -rf ./cl-cdn/LICENSE
+          rm -rf ./cl-cdn/pack.bat
+          rm -rf ./cl-cdn/start_reindex.bat
+          rm -rf ./cl-cdn/scripts
+          rm -rf ./cl-cdn/README.md
+          rm -rf ./cl-cdn/package.json
+          rm -rf ./cl-cdn/servers
           cd ./cl-cdn
           
       - uses: ryand56/r2-upload-action@v1.2
