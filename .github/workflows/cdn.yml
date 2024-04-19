@@ -37,6 +37,8 @@ jobs:
           rm -rf ./cl-cdn/README.md
           rm -rf ./cl-cdn/package.json
           rm -rf ./cl-cdn/servers
+          rm -rf ./cl-cdn/.prettierrc.yaml
+          rm -rf ./cl-cdn/.prettierignore
           cd ./cl-cdn
           
       - uses: ryand56/r2-upload-action@v1.2
