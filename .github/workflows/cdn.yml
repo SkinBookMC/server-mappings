@@ -20,6 +20,9 @@ jobs:
           rm -rf ./cl-cdn/LICENSE
           rm -rf ./cl-cdn/pack.bat
           rm -rf ./cl-cdn/start_reindex.bat
+          ls
+          cd ./cl-cdn
+          ls
           
       - uses: ryand56/r2-upload-action@v1.2
         with:
